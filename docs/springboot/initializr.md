@@ -1,4 +1,5 @@
-关于 Spring Initializr
+## 关于 Spring Initializr
+
 Spring 官方提供了 Spring Initializr 的方式来创建 Spring Boot 项目。网址如下：
 
 https://start.spring.io/
