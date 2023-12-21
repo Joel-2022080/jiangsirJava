@@ -96,7 +96,7 @@ Java：项目选用的 JDK 版本，选择 11 或者 8 就行（编程喵采用�
 
 ![Alt text](tabby%E4%B8%8A%E4%BC%A0jar%E5%8C%85.png)
 
-执行 java -jar tobebetterjavaer-0.0.1-SNAPSHOT.jar 命令。
+执行 java -jar demo-0.0.1-SNAPSHOT.jar 命令。
 
 ![Alt text](run-projects.png)
 
