@@ -9,11 +9,11 @@ https://start.spring.io/
 ![image](https://github.com/Joel-2022080/jiangsirJava/assets/110707210/d95d8585-de85-489e-b650-42d2d9e8fb44)
 
 
-可以将 Spring Initializr 看作是 Spring Boot 项目的初始化向导，它可以帮助开发人员在一分钟之内创建一个 Spring Boot 骨架，非常的傻瓜式。
+你可以将 Spring Initializr 看作是 Spring Boot 项目的初始化向导，它就是用来帮助你在一分钟之内快速搭建一个 Spring Boot 骨架，非常的傻瓜式。
 
-来解释一下 Spring Initializr 初始化界面中的关键选项。
+下面我们来解释一下 Spring Initializr 初始化界面中的关键选项。
 
-1）Project：项目的构建方式，可以选择 Maven（安装方式可以戳链接） 和 Gradle（构建脚本基于 Groovy 或者 Kotlin 等语言来编写，而不是传统的 XML）。编程喵默认采用的 Maven。
+1）Project：项目的构建方式，可以选择 Maven（安装方式可以戳链接） 和 Gradle（构建脚本基于 Groovy 或者 Kotlin 等语言来编写，而不是传统的 XML）。
 
 2）Language：项目的开发语言，可以选择 Java、Kotlin（JetBrains开发的可以在 JVM 上运行的编程语言）、Groovy（可以作为 Java 平台的脚本语言来使用）。默认 Java 即可。
 
@@ -21,22 +21,36 @@ https://start.spring.io/
 
 4）Project Metada：项目的基础设置，包括包名、打包方式、JDK 版本等。
 
-Group：项目所属组织的标识符，比如说 top.codingmore；
-Artifact：项目的标识符，比如说 coding-more；
-Name：默认保持和 Artifact 一致即可；
-Description： 项目的描述信息，比如说《编程喵实战项目（Spring Boot+Vue 前后端分离项目）》；
-Package name：项目包名，根据Group和Artifact自动生成即可。
-Packaging： 项目打包方式，可以选择 Jar 和 War（SSM 时代，JavaWeb 项目通常会打成 War 包，放在 Tomcat 下），Spring Boot 时代默认 Jar 包即可，因为 Spring Boot 可以内置 Tomcat、Jetty、Undertow 等服务容器了。
+  - Group：项目所属组织的标识符，比如说 top.codingmore；
+  - Artifact：项目的标识符，比如说 coding-more；
+  - Name：默认保持和 Artifact 一致即可；
+  - Description： 项目的描述信息，比如说《编程喵实战项目（Spring Boot+Vue 前后端分离项目）》；
+  - Package name：项目包名，根据Group和Artifact自动生成即可。
+  - Packaging： 项目打包方式，可以选择 Jar 和 War（SSM 时代，JavaWeb 项目通常会打成 War 包，放在 Tomcat 下），Spring Boot 时代默认 Jar 包即可，因为 Spring Boot 可以内置 Tomcat、Jetty、Undertow 等服务容器了。
 Java：项目选用的 JDK 版本，选择 11 或者 8 就行（编程喵采用的是最最最最稳定的 Java8）。
 5）Dependencies：项目所需要的依赖和 starter。如果不选择的话，默认只有核心模块 spring-boot-starter 和测试模块 spring-boot-starter-test。
 
-好，接下来我们使用 Spring Initializr 初始化一个 Web 项目，Project 选择 Maven，Spring Boot 选择 2.6.1，Java 选择 JDK 8，Dependencies 选择「Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.」
+接下来我们带大家使用 Spring Initializr 初始化一个 Web 项目，
 
+- Project 选择 Maven；
+- Spring Boot 选择 3.2.0；
+- Java 选择 JDK 17；
+- Dependencies 选择「Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.」
+![image](https://github.com/Joel-2022080/jiangsirJava/assets/110707210/931cca71-f9ee-4378-80fa-29c141b9cc7f)
 
 
 这预示着我们会采用 SpringMVC 并且使用 Tomcat 作为默认服务器来开发一个 Web 项目。
 
-然后点击底部的「generate」按钮，就会生成一个 Spring Boot 初始化项目的压缩包。
+但是，问题来了，细心的同学可能已经发现了，Spring Initializr只能创建Java 17版本以上的项目了，但我们常用的还是Java 8版本，那么该如何解决呢？
+
+其实也很简单，解决方法有2种：
+
+第一种：使用阿里云的spring初始化脚手架（[传送门](https://start.aliyun.com/)）
+他的页面长这个样子，是不是很有阿里味儿
+![image](https://github.com/Joel-2022080/jiangsirJava/assets/110707210/a525171a-22e6-4b4e-8a37-8c5e167947d0)
+
+
+第二种：使用Idea创建时，将server Url的链接地址换成阿里的脚手架即可，比如下面这样
 
 
 
