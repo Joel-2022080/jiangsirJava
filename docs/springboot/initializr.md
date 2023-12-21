@@ -6,6 +6,7 @@ https://start.spring.io/
 
 打开后的界面如下：
 
+![image](https://github.com/Joel-2022080/jiangsirJava/assets/110707210/d95d8585-de85-489e-b650-42d2d9e8fb44)
 
 
 可以将 Spring Initializr 看作是 Spring Boot 项目的初始化向导，它可以帮助开发人员在一分钟之内创建一个 Spring Boot 骨架，非常的傻瓜式。
